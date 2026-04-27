@@ -104,7 +104,7 @@ const projectsDetails = {
 
     "4": {
         en: {
-            title: "SELVA: MULTIPLAYER PLATFORMER",
+            title: "SELVA: PLATFORMER",
             date: "Jan - Feb 2026",
             features: [
                 { title: "SMART CAMERA SYSTEM", desc: "I built a fully custom camera that maintains a 70/30 ratio in the player's movement direction, giving more visual space ahead. On top of that, I placed attraction points directly in the engine — the camera smoothly blends toward them to guide the player's eye toward key areas of the level." },
@@ -115,7 +115,7 @@ const projectsDetails = {
             ]
         },
         fr: {
-            title: "SELVA: PLATFORMER MULTIJOUEUR",
+            title: "SELVA: MULTIJOUEUR",
             date: "Jan - Fév 2026",
             features: [
                 { title: "SYSTÈME DE CAMÉRA INTELLIGENTE", desc: "J'ai développé une caméra entièrement custom qui maintient un ratio 70/30 dans la direction du joueur, offrant plus de visibilité vers l'avant. Des points d'attraction placés dans le moteur permettent à la caméra de se diriger progressivement vers eux pour guider le regard vers les zones clés." },
