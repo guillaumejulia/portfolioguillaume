@@ -102,8 +102,6 @@ const projectsDetails = {
         }
     },
 
-
-
     "4": {
         en: {
             title: "SELVA: MULTIPLAYER PLATFORMER",
@@ -127,10 +125,39 @@ const projectsDetails = {
                 { title: "JUICINESS & MUR DE CRÉDITS", desc: "Ajout d'effets de jus sur l'ensemble du jeu pour rendre chaque action satisfaisante. Création d'un écran de crédits où les joueurs peuvent taguer les murs comme des graffitis — une façon ludique de clore l'expérience." }
             ]
         }
+    },
+    "5": {
+        en: {
+            title: "PROTO RPG: ACTION PROTOTYPE",
+            date: "Personal Project : WIP",
+            features: [
+                { title: "3 SWITCHABLE CHARACTERS", desc: "Implemented a real-time character swap system between three archetypes — Sword, Spear and Bow. Each has its own attack chains, animations and feel, giving the prototype a strong foundation for a roster-based action game." },
+                { title: "CUSTOM MOVEMENT SYSTEM", desc: "Built all locomotion from scratch: sprint, a responsive dash on Shift, and a double-jump glider triggered by pressing Space twice. The glider smoothly reduces fall speed, adding a vertical gameplay layer." },
+                { title: "CLIMBING MECHANIC", desc: "Developed a custom physics-based climbing system that lets the player scale surfaces naturally, independent of Unity's built-in character controller." },
+                { title: "ENEMY AI", desc: "Created enemy agents with proximity detection — they idle until the player enters their range, then engage. Designed to be modular so new behaviors can be plugged in easily." },
+                { title: "HEALTH & COMBAT LOOP", desc: "Implemented HP for both player and enemies, with a damage pipeline tied to each character's attack animations. The foundation for a full combat system." }
+            ]
+        },
+        fr: {
+            title: "PROTO RPG: PROTOTYPE ACTION",
+            date: "Projet Personnel : WIP",
+            features: [
+                { title: "3 PERSONNAGES SWITCHABLES", desc: "Implémentation d'un système de changement de personnage en temps réel entre trois archétypes — Épée, Lance et Arc. Chacun dispose de ses propres enchaînements d'attaques, animations et sensations." },
+                { title: "SYSTÈME DE DÉPLACEMENTS", desc: "Tous les mouvements sont codés à la main : course, dash sur Shift et planeur déclenché par un double appui sur Espace. Le planeur réduit progressivement la vitesse de chute pour ajouter une dimension verticale." },
+                { title: "MÉCANIQUE D'ESCALADE", desc: "Développement d'un système d'escalade basé sur une physique custom permettant au joueur de grimper les surfaces naturellement, sans dépendre du Character Controller natif d'Unity." },
+                { title: "IA DES ENNEMIS", desc: "Création d'agents ennemis avec détection de proximité — ils restent en veille jusqu'à ce que le joueur entre dans leur rayon, puis passent à l'attaque. Architecture modulaire pour faciliter l'ajout de comportements." },
+                { title: "PV & BOUCLE DE COMBAT", desc: "Implémentation d'un système de points de vie pour le joueur et les ennemis, avec un pipeline de dégâts lié aux animations d'attaque de chaque personnage." }
+            ]
+        }
     }
 };
 
 const commonProjectData = {
+    "5": {
+        videoId: "66QW_bgK7B0",
+        tags: ["C#", "Unity", "Personal Project", "Combat System", "Custom Physics", "WIP"],
+        imgs: []
+    },
     "4": {
         videoId: "CEehQYAydOs",
         tags: ["C#", "Unity", "Multiplayer", "Mobile", "Custom Physics"],
@@ -243,12 +270,12 @@ function loadProjectDetails() {
         details.features.forEach((f, index) => {
             const block = document.createElement('div');
             block.className = 'feature-block';
-            const imgPath = common.imgs[index] || common.imgs[0];
+            const imgPath = common.imgs.length > 0 ? (common.imgs[index] || common.imgs[0]) : null;
             
-            block.innerHTML = `
-                <div class="feature-text"><h3>${f.title}</h3><p>${f.desc}</p></div>
-                <div class="feature-image"><img src="${imgPath}"></div>
-            `;
+            block.innerHTML = imgPath
+                ? `<div class="feature-text"><h3>${f.title}</h3><p>${f.desc}</p></div>
+                   <div class="feature-image"><img src="${imgPath}"></div>`
+                : `<div class="feature-text" style="max-width:800px;margin:0 auto;text-align:center;"><h3>${f.title}</h3><p>${f.desc}</p></div>`;
             container.appendChild(block);
         });
 
