@@ -100,11 +100,48 @@ const projectsDetails = {
                 { title: "POLISH & GAME FEEL", desc: "Implémentation d'effets de 'Juice' (secousses, particules, shaders) pour moderniser le feeling classique du Sokoban et améliorer la rétention." }
             ]
         }
+    },
+
+
+
+    "4": {
+        en: {
+            title: "SELVA: MULTIPLAYER PLATFORMER",
+            date: "Jan - Feb 2026",
+            features: [
+                { title: "SMART CAMERA SYSTEM", desc: "I built a fully custom camera that maintains a 70/30 ratio in the player's movement direction, giving more visual space ahead. On top of that, I placed attraction points directly in the engine — the camera smoothly blends toward them to guide the player's eye toward key areas of the level." },
+                { title: "PENDULUM PLATFORM SYSTEM", desc: "Designed and coded a physics-based pendulum system for moving platforms. Each platform swings with configurable arc, speed and pivot, creating dynamic obstacles that interact naturally with the player's momentum." },
+                { title: "PLAYER MOVEMENT & FSM", desc: "Implemented the full player locomotion: custom velocity, acceleration and deceleration curves for a snappy but weighty feel. Organized all player states (idle, run, jump, fall...) into a clean Finite State Machine for maintainability." },
+                { title: "LEVEL DESIGN — LEVEL 2", desc: "Handled the level design of the second level end to end: layout, platform placement, pendulum choreography and pacing. Designed to progressively teach the game mechanics while maintaining a fun challenge." },
+                { title: "JUICINESS & CREDITS WALL", desc: "Added juice effects throughout the game to make every action feel satisfying. Created a special credits screen where players can tag the walls like graffiti — a playful way to sign off the experience." }
+            ]
+        },
+        fr: {
+            title: "SELVA: PLATFORMER MULTIJOUEUR",
+            date: "Jan - Fév 2026",
+            features: [
+                { title: "SYSTÈME DE CAMÉRA INTELLIGENTE", desc: "J'ai développé une caméra entièrement custom qui maintient un ratio 70/30 dans la direction du joueur, offrant plus de visibilité vers l'avant. Des points d'attraction placés dans le moteur permettent à la caméra de se diriger progressivement vers eux pour guider le regard vers les zones clés." },
+                { title: "SYSTÈME DE PENDULE", desc: "Conception et développement d'un système de plateformes en pendule basé sur la physique. Chaque plateforme oscille avec un arc, une vitesse et un pivot configurables, créant des obstacles dynamiques qui interagissent naturellement avec la vélocité du joueur." },
+                { title: "DÉPLACEMENTS & MACHINE À ÉTATS", desc: "Implémentation complète des déplacements : vélocité, accélération et décélération custom pour un feeling à la fois nerveux et lourd. Tous les états du joueur (idle, run, jump, fall...) sont organisés dans une Finite State Machine propre et maintenable." },
+                { title: "LEVEL DESIGN — NIVEAU 2", desc: "Responsable du level design du deuxième niveau de bout en bout : layout, placement des plateformes, chorégraphie des pendules et rythme. Conçu pour enseigner progressivement les mécaniques tout en maintenant un défi plaisant." },
+                { title: "JUICINESS & MUR DE CRÉDITS", desc: "Ajout d'effets de jus sur l'ensemble du jeu pour rendre chaque action satisfaisante. Création d'un écran de crédits où les joueurs peuvent taguer les murs comme des graffitis — une façon ludique de clore l'expérience." }
+            ]
+        }
     }
 };
 
-/* --- REMPLACE "ID_VIDEO_HERE" PAR TES ID YOUTUBE (ex: "dQw4w9WgXcQ") --- */
 const commonProjectData = {
+    "4": {
+        videoId: "CEehQYAydOs",
+        tags: ["C#", "Unity", "Multiplayer", "Mobile", "Custom Physics"],
+        imgs: [
+            "ClosingGeneral/Screenshots/Platformer/Platformer2.png",
+            "ClosingGeneral/Screenshots/Platformer/Platformer3.png",
+            "ClosingGeneral/Screenshots/Platformer/Platformer4.png",
+            "ClosingGeneral/Screenshots/Platformer/Platformer5.png",
+            "ClosingGeneral/Screenshots/Platformer/Platformer6.png"
+        ]
+    },
     "1": { 
         videoId: "CMVbx05H4lI", 
         tags: ["C#", "Unity", "Custom Physics", "Vector Math"], 
