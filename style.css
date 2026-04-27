@@ -135,3 +135,221 @@ footer { text-align: center; padding: 40px; border-top: 1px solid var(--border);
 .tags span { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; font-size: 0.85rem; font-family: var(--font-code); color: var(--text-dim); }
 .badge-solo { border: 1px solid var(--accent); color: var(--accent); padding: 6px 14px; font-family: var(--font-code); font-weight: bold; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
 .badge-group { border: 1px solid var(--secondary); color: #c47aff; padding: 6px 14px; font-family: var(--font-code); font-weight: bold; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .feature-block {
+        gap: 40px;
+    }
+
+    .feature-text {
+        min-width: unset;
+    }
+
+    .feature-text h3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* --- MOBILE (max 768px) --- */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-container {
+        gap: 15px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 120px 6% 60px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 15vw, 5rem);
+        letter-spacing: -2px;
+    }
+
+    .typewriter {
+        font-size: 1.2rem;
+    }
+
+    /* ABOUT */
+    .about-box {
+        padding: 50px 25px;
+        margin: 0 5%;
+    }
+
+    .about-box h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-box p {
+        font-size: 1.1rem;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+        padding: 0 5%;
+    }
+
+    /* PROJECTS GRID */
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        padding: 0 5% 60px;
+    }
+
+    .card {
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 5% 60px;
+    }
+
+    .skill-card {
+        padding: 35px 25px;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-container {
+        padding: 60px 5%;
+    }
+
+    /* PROJET PAGE — feature blocks */
+    .feature-block {
+        flex-direction: column !important;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .feature-block:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .feature-text {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .feature-text h3 {
+        font-size: 2rem;
+    }
+
+    .feature-image {
+        width: 100%;
+    }
+
+    /* VIDEO */
+    .video-wrapper {
+        border-radius: 15px;
+        margin-bottom: 60px;
+    }
+
+    /* HERO PROJET PAGE */
+    #project-title {
+        font-size: 2.5rem !important;
+    }
+
+    /* BUTTONS */
+    .btn {
+        padding: 15px 35px;
+        font-size: 0.9rem;
+    }
+
+    /* BLOBS — plus discrets sur mobile */
+    .blob {
+        width: 400px;
+        height: 400px;
+        opacity: 0.15;
+    }
+
+    /* TAGS */
+    .tags {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /* SECTIONS padding */
+    #about {
+        padding: 80px 0 !important;
+    }
+
+    #skills {
+        padding: 80px 0 !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 16vw, 4rem);
+    }
+
+    .about-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .feature-text h3 {
+        font-size: 1.6rem;
+    }
+
+    #project-title {
+        font-size: 1.8rem !important;
+    }
+}
