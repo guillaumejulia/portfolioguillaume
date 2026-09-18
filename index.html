@@ -1,172 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guillaume Julia | Creative Tech Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guillaume Julia, étudiant à ISART Digital. Projets de jeux, programmation gameplay et notes de développement.">
+<title>Guillaume Julia | Carnet de développement</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="groovexe.css">
 </head>
 <body>
-    <div class="scroll-progress" id="scroll-progress"></div>
-    
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-    
-    <div class="background-grid"></div>
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-
-    <nav class="navbar">
-        <a href="index.html" class="logo">GUILLAUME.<span class="tech">JULIA</span></a>
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#home" data-key="nav-home">Home</a></li>
-                <li><a href="#about" data-key="nav-about">Profile</a></li>
-                <li><a href="#projects" data-key="nav-work">Work</a></li>
-                <li><a href="#skills" data-key="nav-skills">Skills</a></li>
-                <li><a href="#contact" data-key="nav-contact">Contact</a></li>
-            </ul>
-            <div class="lang-switch" id="lang-toggle">[ EN ]</div>
-        </div>
-    </nav>
-
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch-text" data-key="hero-title">CRAFTING<br>IMMERSION</h1>
-            <h2 class="typewriter"><span data-key="hero-subtitle">I build</span> <span id="typing-text"></span></h2>
-            <div style="margin-top: 60px;"><a href="#projects" class="btn" data-key="hero-btn">View My Work</a></div>
-        </div>
-    </header>
-
-    <section id="about" style="padding: 120px 5%;">
-        <div class="about-perspective">
-            <div class="about-box" id="tilt-box">
-                <h2 data-key="about-title">HELLO WORLD.</h2>
-                <p data-key="about-text">
-                    Welcome to my portfolio! I am <span class="highlight">Guillaume Julia</span>, a student at <strong>ISART Digital School</strong>.
-                    I created this space to showcase my journey as a <strong>Game Programmer & Designer</strong>.
-                    <br><br>
-                    Beyond gaming, I leverage my coding skills to build <strong>Custom Automation Scripts</strong> and software solutions that solve real-world problems.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2 class="section-title" data-key="section-projects">Featured Case Studies</h2>
-        <div class="projects-grid">
-            
-            <div class="card">
-                <div class="card-image" style="background-image: url('ClosingGeneral/Screenshots/Platformer/Platformer1.png');"></div>
-                <div class="card-info">
-                    <span class="badge-group">GROUP UNITY</span>
-                    <h3>Selva: Action Platformer</h3>
-                    <div class="tags" style="margin-bottom: 30px;"><span>C#</span><span>Gameplay</span><span>Custom Physics</span><span>Mobile</span></div>
-                    <a href="projet.html?id=4" class="btn" style="padding: 12px 30px; font-size: 0.9rem;" data-key="btn-case">View Case Study</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('ClosingGeneral/Screenshots/Rush/Rush1.png');"></div>
-                <div class="card-info">
-                    <span class="badge-solo">SOLO UNITY</span>
-                    <h3>The Rush: Physics Sandbox</h3>
-                    <div class="tags" style="margin-bottom: 30px;"><span>C#</span><span>Maths</span><span>Custom Physics</span></div>
-                    <a href="projet.html?id=1" class="btn" style="padding: 12px 30px; font-size: 0.9rem;" data-key="btn-case">View Case Study</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('ClosingGeneral/Screenshots/Gacha/Gacha1.png');"></div>
-                <div class="card-info">
-                    <span class="badge-solo">SOLO UNITY - WIP</span>
-                    <h3>Proto RPG: Action Prototype</h3>
-                    <div class="tags" style="margin-bottom: 30px;"><span>C#</span><span>Custom Physics</span><span>Combat System</span></div>
-                    <a href="projet.html?id=5" class="btn" style="padding: 12px 30px; font-size: 0.9rem;" data-key="btn-case">View Case Study</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('ClosingGeneral/Screenshots/OneButton/OneButtonGame1.png');"></div>
-                <div class="card-info">
-                    <span class="badge-solo">SOLO GODOT</span>
-                    <h3>Words Support (Mobile)</h3>
-                    <div class="tags" style="margin-bottom: 30px;"><span>JSON</span><span>Mobile UX</span><span>Accessibility</span></div>
-                    <a href="projet.html?id=2" class="btn" style="padding: 12px 30px; font-size: 0.9rem;" data-key="btn-case">View Case Study</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image" style="background-image: url('ClosingGeneral/Screenshots/Sokoban/Sokoban4.png');"></div>
-                <div class="card-info">
-                    <span class="badge-group">GROUP GODOT</span>
-                    <h3>Sokoban Social Puzzle</h3>
-                    <div class="tags" style="margin-bottom: 30px;"><span>Data Management</span><span>Architecture</span><span>Teamwork</span></div>
-                    <a href="projet.html?id=3" class="btn" style="padding: 12px 30px; font-size: 0.9rem;" data-key="btn-case">View Case Study</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" style="padding: 150px 0;">
-        <h2 class="section-title" data-key="section-skills">Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fa-solid fa-gamepad skill-icon"></i>
-                <h3 data-key="skill-game-title">Game Engine Architecture</h3>
-                <p data-key="skill-game-desc">Unity (C#), Godot (GDScript). Expertise in custom physics, gameplay programming, and HLSL Shaders.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-robot skill-icon"></i>
-                <h3 data-key="skill-auto-title">Python Automation</h3>
-                <p data-key="skill-auto-desc">Advanced Scripting, Web Scraping (Selenium, BS4), Discord/Slack Bots, Data Processing pipelines.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-server skill-icon"></i>
-                <h3 data-key="skill-data-title">Data & Backend</h3>
-                <p data-key="skill-data-desc">SQL Databases, JSON/XML Parsing, API Integration, Save Systems and Cloud Data sync.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fa-solid fa-pen-ruler skill-icon"></i>
-                <h3 data-key="skill-ux-title">UX & Interactive Design</h3>
-                <p data-key="skill-ux-desc">Reactive UI Systems, Accessibility-first design (Serious Games), Process Gamification.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact-container">
-        <h2 class="section-title" data-key="contact-title">Ready to Collaborate?</h2>
-        <p style="font-size: 1.3rem; color: #aaa; max-width: 600px; text-align: center; margin-bottom: 40px;" data-key="contact-desc">
-            Let's build something amazing together. Reach out via your preferred channel.
-        </p>
-
-        <div class="contact-grid">
-            <a href="https://www.linkedin.com/in/guillaume-julia-a1200836b/" target="_blank" class="contact-card linkedin">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <h3>Guillaume Julia</h3>
-                <span>Professional Network</span>
-            </a>
-            
-            <a href="https://www.upwork.com/freelancers/~01dd843549e33586c9?mp_source=share" target="_blank" class="contact-card upwork">
-                <i class="fa-brands fa-upwork"></i>
-                <h3>Guillaume J.</h3>
-                <span>Versatile Dev - Freelance</span>
-            </a>
-            
-            <a href="mailto:guillaume.julia2005@gmail.com" class="contact-card email">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>Send an Email</h3>
-                <span>guillaume.julia2005@gmail.com</span>
-            </a>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 GUILLAUME JULIA. VERSATILE DEVELOPER.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<nav class="navbar" aria-label="Navigation">
+<a href="index.html" class="logo">Guillaume Julia</a>
+<div class="nav-container">
+<ul class="nav-links">
+<li>
+<a href="#projects" data-key="nav-work">Projets</a>
+</li>
+<li>
+<a href="#about" data-key="nav-about">À propos</a>
+</li>
+<li>
+<a href="#skills" data-key="nav-skills">Pratique</a>
+</li>
+<li>
+<a href="#contact" data-key="nav-contact">Contact</a>
+</li>
+</ul>
+<button class="lang-switch" id="lang-toggle" type="button" aria-label="Switch to English">FR / EN</button>
+</div>
+</nav>
+<main>
+<header class="hero" id="home">
+<div class="masthead"><p class="eyebrow" data-key="eyebrow">Game programmer / Carnet de développement</p><span class="edition">GJ / PLAYER &amp; PROGRAMMER</span></div>
+<h1 data-key="hero-title">Guillaume<span class="surname">Julia<span class="name-dot">.</span></span></h1>
+<div class="hero-baseline"><p data-key="hero-desc">Programmation gameplay, interfaces et effets visuels. Je suis étudiant à ISART Digital ; ici, je montre mes jeux et ce que j’ai construit dedans.</p><a class="text-link" href="#projects" data-key="hero-btn">Explorer les projets</a></div>
+<div class="cover-spread">
+<aside class="cover-notes">
+<p class="note-label" data-key="cover-label">Projet sélectionné</p>
+<h2>Groovexe<span class="title-period">.</span></h2>
+<p class="cover-line" data-key="cover-title">Trois jours. Un jeu d’équipe.</p>
+<p class="cover-description" data-key="cover-note">Ma partie : les consoles, les inputs et les effets qui accompagnent les actions.</p>
+<div class="input-note"><p data-key="cover-inputs">Les signaux que j’ai mis en place</p><code>click / hold<br>release / write</code></div>
+<p class="award-note" data-key="groov-awards">Prix sound design & vote des étudiants</p>
+<a href="projet.html?id=6" class="text-link" data-key="cover-open">Entrer dans le projet</a>
+</aside>
+<div class="capture-sheet" id="screenshot-viewer">
+<div class="window-title"><span data-key="viewer-title">Groovexe / Captures du jeu</span><span class="window-file">.jpg</span></div>
+<figure class="cover-main"><a href="projet.html?id=6"><img src="ClosingGeneral/Screenshots/Groovexe/GroovEXE_Screenshots/23_GroovEXE_SCREENSHOT_1.jpg" width="2331" height="1308" alt="Groovexe — écran de lancement" fetchpriority="high"></a>
+<figcaption class="viewer-toolbar"><span class="viewer-caption" aria-live="polite">Écran de lancement</span><div class="viewer-controls"><button type="button" data-viewer-step="-1" aria-label="Capture précédente">←</button><span class="viewer-count">01 / 03</span><button type="button" data-viewer-step="1" aria-label="Capture suivante">→</button></div></figcaption></figure>
+</div>
+</div>
+</header>
+<section id="about" class="section about-layout">
+<div class="section-heading">
+<span class="section-number">01</span>
+<h2 class="section-title" data-key="about-title">À propos</h2><p class="pencil-note" data-key="about-margin">Le code, mais aussi ce qu’on ressent en jouant.</p>
+</div>
+<div class="about-copy">
+<p data-key="about-text">Je suis Guillaume Julia, étudiant en game programming et game design à ISART Digital. Je développe des jeux, du fonctionnement des mécaniques jusqu’aux réactions à l’écran.</p>
+<p class="aside" data-key="about-aside">Mon travail touche au gameplay, aux interfaces, aux caméras et aux effets visuels. Je programme avec Unity et Godot, seul ou en équipe. Je développe aussi des outils et des scripts Python en dehors du jeu vidéo.</p>
+</div>
+</section>
+<section id="projects" class="section">
+<div class="section-heading">
+<span class="section-number">02</span>
+<h2 class="section-title" data-key="section-projects">Sélection de jeux</h2>
+</div>
+<p class="project-index" data-key="project-index">Six projets / Solo & équipe</p>
+<div class="projects-grid">
+<article class="project-card project-6">
+<a class="project-image" href="projet.html?id=6"><img src="ClosingGeneral/Screenshots/Groovexe/GroovEXE_Screenshots/23_GroovEXE_SCREENSHOT_3.jpg" alt="Groovexe — capture de gameplay" loading="lazy"></a>
+<div class="project-copy"><div class="project-meta"><span>01 / <span data-key="meta6">En équipe / Game Jam ISART</span></span><span data-key="jam-duration">3 jours</span></div>
+<h3><a href="projet.html?id=6">Groovexe</a></h3><p data-key="p6-desc">Consoles à frappes répétées, touches qui perdent en efficacité, signaux d’input et transitions de caméra. Notre jeu a remporté le prix sound design et le vote des étudiants.</p><a class="text-link" href="projet.html?id=6" data-key="btn-case">Ouvrir les notes</a></div>
+<p class="project-annotation" data-key="margin-6">Répéter une touche rapporte de moins en moins.</p></article>
+<article class="project-card project-4">
+<a class="project-image" href="projet.html?id=4">
+<img src="ClosingGeneral/Screenshots/Platformer/Platformer1.png" alt="Selva — capture du jeu" loading="lazy">
+</a>
+<div class="project-copy">
+<div class="project-meta">
+<span>02 / <span data-key="meta4">En équipe / Unity</span>
+</span>
+<span>2026</span>
+</div>
+<h3>
+<a href="projet.html?id=4">Selva</a>
+</h3>
+<p data-key="p4-desc">Une caméra qui anticipe la direction du joueur, des plateformes en pendule et une machine à états pour les déplacements.</p>
+<a class="text-link" href="projet.html?id=4" data-key="btn-case">Ouvrir les notes</a>
+</div>
+<p class="project-annotation" data-key="margin-4">70 % de la vue devant le joueur, 30 % derrière.</p></article>
+<article class="project-card project-1">
+<a class="project-image" href="projet.html?id=1">
+<img src="ClosingGeneral/Screenshots/Rush/Rush1.png" alt="The Rush — capture du jeu" loading="lazy">
+</a>
+<div class="project-copy">
+<div class="project-meta">
+<span>03 / <span data-key="meta1">Solo / Unity</span>
+</span>
+<span>2025</span>
+</div>
+<h3>
+<a href="projet.html?id=1">The Rush</a>
+</h3>
+<p data-key="p1-desc">Un terrain d’expérimentation pour coder les collisions, les vecteurs et les comportements de briques dans Unity.</p>
+<a class="text-link" href="projet.html?id=1" data-key="btn-case">Ouvrir les notes</a>
+</div>
+<p class="project-annotation" data-key="margin-1">Les collisions, calculées à la main.</p></article>
+<article class="project-card project-5">
+<a class="project-image" href="projet.html?id=5">
+<img src="ClosingGeneral/Screenshots/Gacha/Gacha1.png" alt="Proto RPG — capture du jeu" loading="lazy">
+</a>
+<div class="project-copy">
+<div class="project-meta">
+<span>04 / <span data-key="meta5">Personnel / Unity</span>
+</span>
+<span data-key="wip">En cours</span>
+</div>
+<h3>
+<a href="projet.html?id=5">Proto RPG</a>
+</h3>
+<p data-key="p5-desc">Un prototype personnel pour travailler le combat, le changement de personnage, l’escalade et le vol plané.</p>
+<a class="text-link" href="projet.html?id=5" data-key="btn-case">Ouvrir les notes</a>
+</div>
+<p class="project-annotation" data-key="margin-5">Un terrain d’essai pour les déplacements et le combat.</p></article>
+<article class="project-card project-2">
+<a class="project-image" href="projet.html?id=2">
+<img src="ClosingGeneral/Screenshots/OneButton/OneButtonGame1.png" alt="Words Support — capture du jeu" loading="lazy">
+</a>
+<div class="project-copy">
+<div class="project-meta">
+<span>05 / <span data-key="meta2">Solo / Godot</span>
+</span>
+<span>2025</span>
+</div>
+<h3>
+<a href="projet.html?id=2">Words Support</a>
+</h3>
+<p data-key="p2-desc">Un jeu de lettres tactile : une seule commande, des indices visuels progressifs et des niveaux générés à partir de JSON.</p>
+<a class="text-link" href="projet.html?id=2" data-key="btn-case">Ouvrir les notes</a>
+</div>
+<p class="project-annotation" data-key="margin-2">Une seule commande pour jouer.</p></article>
+<article class="project-card project-3">
+<a class="project-image" href="projet.html?id=3">
+<img src="ClosingGeneral/Screenshots/Sokoban/Sokoban4.png" alt="Sokoban — capture du jeu" loading="lazy">
+</a>
+<div class="project-copy">
+<div class="project-meta">
+<span>06 / <span data-key="meta3">En équipe / Godot</span>
+</span>
+<span>2025</span>
+</div>
+<h3>
+<a href="projet.html?id=3">Sokoban</a>
+</h3>
+<p data-key="p3-desc">Un puzzle développé en équipe. Ma contribution porte sur les comptes, les sauvegardes, les statistiques et l’organisation du code.</p>
+<a class="text-link" href="projet.html?id=3" data-key="btn-case">Ouvrir les notes</a>
+</div>
+<p class="project-annotation" data-key="margin-3">Ce qu’il reste d’une partie : la sauvegarde.</p></article>
+</div>
+</section>
+<section id="skills" class="section">
+<div class="section-heading">
+<span class="section-number">03</span>
+<h2 class="section-title" data-key="section-skills">Outils & pratique</h2>
+</div>
+<div class="skills-grid">
+<div class="skill-row">
+<span class="section-number">01</span>
+<div>
+<h3 data-key="skill-game-title">Programmation de jeux</h3>
+<p data-key="skill-game-desc">Unity, C#, Godot et GDScript. Déplacements, collisions, machines à états et shaders HLSL.</p>
+</div>
+</div>
+<div class="skill-row">
+<span class="section-number">02</span>
+<div>
+<h3 data-key="skill-auto-title">Scripts & automatisation</h3>
+<p data-key="skill-auto-desc">Python, Selenium et Beautiful Soup. Extraction de données, bots et automatisation de tâches.</p>
+</div>
+</div>
+<div class="skill-row">
+<span class="section-number">03</span>
+<div>
+<h3 data-key="skill-data-title">Données & sauvegardes</h3>
+<p data-key="skill-data-desc">SQL, JSON, XML et API. Sérialisation, sauvegardes de progression et gestion de données.</p>
+</div>
+</div>
+<div class="skill-row">
+<span class="section-number">04</span>
+<div>
+<h3 data-key="skill-ux-title">Interfaces & accessibilité</h3>
+<p data-key="skill-ux-desc">Interfaces tactiles, retours visuels et mécaniques adaptées aux serious games.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="section contact-layout">
+<div>
+<div class="section-heading">
+<span class="section-number">04</span>
+<h2 class="section-title" data-key="contact-title">On en parle ?</h2>
+</div>
+<p data-key="contact-desc">Pour parler d’un projet, de mon travail ou d’une collaboration, vous pouvez m’écrire directement.</p>
+</div>
+<ul class="contact-links">
+<li>
+<a href="mailto:guillaume.julia2005@gmail.com">guillaume.julia2005@gmail.com<span>Email</span>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/guillaume-julia-a1200836b/" target="_blank" rel="noopener noreferrer">Guillaume Julia<span>LinkedIn</span>
+</a>
+</li>
+<li>
+<a href="https://www.upwork.com/freelancers/~01dd843549e33586c9?mp_source=share" target="_blank" rel="noopener noreferrer">Guillaume J.<span>Upwork</span>
+</a>
+</li>
+</ul>
+</section>
+</main>
+<footer>
+<span>© 2026 Guillaume Julia</span>
+<span data-key="footer-note">Guillaume Julia / Game programming</span>
+</footer>
+<script src="script.js">
+</script>
 </body>
 </html>
